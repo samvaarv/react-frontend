@@ -10,7 +10,7 @@ export default function Header() {
   const [socialmedia, setSocialMedia] = useState([]);
   useEffect(() => {
     const getSocialMedia = async () => {
-      let response = await fetch("http://localhost:8888/api/socialmedia");
+      let response = await fetch("https://node-backend-1-sykb.onrender.com/api/socialmedia");
       let data = await response.json();
       setSocialMedia(data);
     };

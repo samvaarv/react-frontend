@@ -5,7 +5,7 @@ export default function Reviews() {
 
   useEffect(() => {
     const getReviews = async () => {
-      let response = await fetch("http://localhost:8888/api/reviews");
+      let response = await fetch("https://node-backend-1-sykb.onrender.com/api/reviews");
       let data = await response.json();
       setReviews(data);
     };

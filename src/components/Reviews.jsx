@@ -29,7 +29,7 @@ export default function Reviews() {
               <div className="reviews-card-footer">
                 <div className="reviews-card-image">
                   <img
-                    src={`http://localhost:8888/${review.reviewer.image}`}
+                    src={`https://node-backend-1-sykb.onrender.com/${review.reviewer.image}`}
                     alt={review.reviewer.name}
                   />
                 </div>

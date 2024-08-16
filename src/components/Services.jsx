@@ -29,7 +29,7 @@ export default function Services() {
           <div className="services-category" key={index}>
             <div className="services-category-title-block">
               <img
-                src={`http://localhost:8888/${service.icon}`}
+                src={`https://node-backend-1-sykb.onrender.com/${service.icon}`}
                 alt=""
                 aria-hidden="true"
               />

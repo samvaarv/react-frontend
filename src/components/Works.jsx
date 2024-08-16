@@ -4,7 +4,7 @@ export default function Works() {
   const [projects, setProjects] = useState([]);
   useEffect(() => {
     const getProjects = async () => {
-      let response = await fetch("http://localhost:8888/api/projects");
+      let response = await fetch("https://node-backend-1-sykb.onrender.com/api/projects");
       let data = await response.json();
       setProjects(data);
     };
@@ -17,7 +17,7 @@ export default function Works() {
       .split(", ") // Split by ', ' to get individual entries
       .map((entry) => {
         const [src, descriptor] = entry.split(" "); // Split by space to get src and descriptor
-        return `http://localhost:8888/${src} ${descriptor}`;
+        return `https://node-backend-1-sykb.onrender.com/${src} ${descriptor}`;
       })
       .join(", "); // Join back into a single string with ', ' separator
   };
@@ -32,7 +32,7 @@ export default function Works() {
               <div className="works-image-block">
                 <img
                   srcSet={parseSrcSet(project.imageSet)}
-                  src={`http://localhost:8888/${project.image}`}
+                  src={`https://node-backend-1-sykb.onrender.com/${project.image}`}
                   alt={project.altText}
                 />
               </div>

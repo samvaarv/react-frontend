@@ -6,7 +6,7 @@ export default function Services() {
   useEffect(() => {
     const getServices = async () => {
       try {
-        let response = await fetch("http://localhost:8888/api/services");
+        let response = await fetch("https://node-backend-1-sykb.onrender.com/api/services");
         let data = await response.json();
         setServices(data);
       } catch (err) {

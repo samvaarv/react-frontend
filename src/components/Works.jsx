@@ -28,7 +28,7 @@ export default function Works() {
       <div className="works-block">
         {projects.map((project) => (
           <div className="work" key={project.id}>
-            <a href="#" className="group" target="_blank">
+            <a href={`https://node-backend-1-sykb.onrender.com/${project.url}`} className="group" target="_blank">
               <div className="works-image-block">
                 <img
                   srcSet={parseSrcSet(project.imageSet)}
@@ -52,7 +52,7 @@ export default function Works() {
         ))}
       </div>
       <div className="row">
-        <a href="#" className="more-btn">
+        <a href="https://github.com/samvaarv" className="more-btn">
           <span className="bg-span">
             <span></span>
           </span>
